@@ -4,11 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Web App</title>
-  <link rel="stylesheet" href="styles.css"> <!-- Optional: Link to a CSS file -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <h1>Web Calculator</h1>
+    <div class="header">
+        <h1>Web Calculator</h1>
+        <p>count <span id="count">0</span></p>
+        <button id="btn">Add</button>
+    </div>
   <div class="container">
     <div class="calculator">
         <div class="screen">
@@ -40,6 +43,6 @@
   </div>
 
 
-  <script src="app.js"></script> <!-- Optional: Link to a JS file -->
+  <script src="app.js"></script>
 </body>
 </html>
