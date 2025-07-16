@@ -7,42 +7,33 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="header">
-        <h1>Web Calculator</h1>
-        <p>count <span id="count">0</span></p>
-        <button id="btn">Add</button>
-    </div>
-  <div class="container">
-    <div class="calculator">
-        <div class="screen">
-            <div class="history" id="history">history</div>
-            <div class="display" id="display">0</div>
+    <div id="calculator">
+        <input id="display" readonly>
+        <div id="keys">
+          <button onclick="clearDisplay()" >AC</button>
+          <button onclick="appendtoDisplay('^')" class="operator-btn">^</button>
+          <button onclick="appendtoDisplay('%')" class="operator-btn">%</button>
+          <button onclick="appendtoDisplay('/')" class="operator-btn">/</button>
+          <button onclick="appendtoDisplay('7')">7</button>
+          <button onclick="appendtoDisplay('8')">8</button>
+          <button onclick="appendtoDisplay('9')">9</button>
+          <button onclick="appendtoDisplay('*')" class="operator-btn">*</button>
+          <button onclick="appendtoDisplay('4')">4</button>
+          <button onclick="appendtoDisplay('5')">5</button>
+          <button onclick="appendtoDisplay('6')">6</button>
+          <button onclick="appendtoDisplay('-')" class="operator-btn">-</button>
+          <button onclick="appendtoDisplay('1')">1</button>
+          <button onclick="appendtoDisplay('2')">2</button>
+          <button onclick="appendtoDisplay('3')">3</button>
+          <button onclick="appendtoDisplay('+')" class="operator-btn">+</button>
+          <button onclick="appendtoDisplay('0')" class="zero-btn">0</button>
+          <button onclick="appendtoDisplay('.')">.</button>
+          <button onclick="calculate()">=</button>
         </div>
-        <div class="buttons">
-          <button class="btn">AC</button>
-          <button class="btn">^</button>
-          <button class="btn">%</button>
-          <button class="btn-func">/</button>
-          <button class="btn">7</button>
-          <button class="btn">8</button>
-          <button class="btn">9</button>
-          <button class="btn-func">*</button>
-          <button class="btn">4</button>
-          <button class="btn">5</button>
-          <button class="btn">6</button>
-          <button class="btn-func">-</button>
-          <button class="btn">1</button>
-          <button class="btn">2</button>
-          <button class="btn">3</button>
-          <button class="btn-func">+</button>
-          <button class="btn zero">0</button>
-          <button class="btn">.</button>
-          <button class="btn-func">=</button>
-        </div>
+    
     </div>
-  </div>
 
 
-  <script src="app.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
